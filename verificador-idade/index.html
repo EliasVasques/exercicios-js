@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section class="interacao">
+        <div>
+            <label>
+                Ano de nascimento:
+                <input type="number" class="ano-nasc">
+            </label>
+        </div>
+        
+        <div>
+            Sexo:
+            <label>
+                Masculino
+                <input type="radio" name="sexo" checked>
+                <!--id="opcao1" value="off" onclick="marcar(this, 'opcao2')"-->
+            </label>
+            <label>
+                Feminino
+                <input type="radio" name="sexo">
+                <!-- value="off" onclick="marcar(this, 'opcao1')"id="opcao2" -->
+            </label>
+        </div>
+
+        <div>
+            <button onclick="verificar()">Verificar</button>
+        </div>
+        
+        <div class="resultado">
+            <p></p>
+            <img src="" alt="">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
